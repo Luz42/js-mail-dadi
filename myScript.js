@@ -16,8 +16,8 @@ Se dobbiamo confrontare qualcosa che "cosa" ci serve?
 //GENERO UN NUMERO RANDOM DA O A 5
 //perchè gli elementi presenti nell'ARRAY si iniziano a contare da zero e qui ci sono 6 valori
 const number = Math.random()
-let naturalNumber = Math.floor(number * 6)
-console.log(naturalNumber)
+let userNumber = Math.floor(number * 6)
+console.log(userNumber)
 
 const array = [1, 2, 3, 4, 5, 6]
 
@@ -28,17 +28,17 @@ for (random = 0; random < array.length; random++){
     //che sarà da arrotondare per difetto in modo che generi valori compresi tra 0 e 5
     //successivamente verra confrontato con l'array e comparato al numero assegnato
     //stampo il risultato
-    console.log(array[naturalNumber])    
+    console.log(array[userNumber])    
 }
 
     //genero un altro numero random
 const number2 = Math.random()
-let naturalNumber2 = Math.floor(number2 * 6)
-console.log(naturalNumber2)
+let computerNumber2 = Math.floor(number2 * 6)
+console.log(computerNumber2)
 
 for (random = 0; random < array.length; random++){
 
-    console.log(array[naturalNumber2])
+    console.log(array[computerNumber2])
 }
 
     //confronto i risultati
