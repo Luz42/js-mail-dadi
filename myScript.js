@@ -26,10 +26,20 @@ const array = [1, 2, 3, 4, 5, 6]
 for (random = 0; random < array.length; random++){
     //il numero random generato * 6 genererà un numero compreso tra 0 e 5
     //che sarà da arrotondare per difetto in modo che generi valori compresi tra 0 e 5
-    console.log(array[naturalNumber])
     //successivamente verra confrontato con l'array e comparato al numero assegnato
     //stampo il risultato
+    console.log(array[naturalNumber])    
+}
+
     //genero un altro numero random
+const number2 = Math.random()
+let naturalNumber2 = Math.floor(number2 * 6)
+console.log(naturalNumber2)
+
+for (random = 0; random < array.length; random++){
+
+    console.log(array[naturalNumber2])
+}
+
     //confronto i risultati
     //dichiaro il vincitore
-}
