@@ -41,16 +41,30 @@ for (random = 0; random < array.length; random++){
     console.log(array[computerNumber])
 }
 
+document.getElementById("utente").innerHTML = userNumber
+document.getElementById("computer").innerHTML = computerNumber
+
+let result = document.getElementById("bg-change")
+
     //confronto i risultati
 if (userNumber < computerNumber){
     console.log('Hai perso')
+    //result.innerHTML.append('Hai perso')
+    document.getElementById("risultato").innerHTML = ('Hai perso');
+    result.classList.add('bg-danger')
 }
 
 if (userNumber > computerNumber) {
     console.log('Hai vinto')
+    //result.innerHTML.append ('Hai vinto')
+    result.classList.add('bg-success')
+    document.getElementById("risultato").innerHTML = ('Hai vinto');
 } 
 
 if(userNumber === computerNumber) {
-    console.log('Pareggio')    
+    console.log('Pareggio') 
+    //result.innerHTML.append('Hai pareggiato')
+    result.classList.add('bg-warning')
+    document.getElementById("risultato").innerHTML = ('Hai pareggiato');
 }
     //dichiaro il vincitore
