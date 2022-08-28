@@ -33,13 +33,24 @@ for (random = 0; random < array.length; random++){
 
     //genero un altro numero random
 const number2 = Math.random()
-let computerNumber2 = Math.floor(number2 * 6)
-console.log(computerNumber2)
+let computerNumber = Math.floor(number2 * 6)
+console.log(computerNumber)
 
 for (random = 0; random < array.length; random++){
 
-    console.log(array[computerNumber2])
+    console.log(array[computerNumber])
 }
 
     //confronto i risultati
+if (userNumber < computerNumber){
+    console.log('Hai perso')
+}
+
+if (userNumber > computerNumber) {
+    console.log('Hai vinto')
+} 
+
+if(userNumber === computerNumber) {
+    console.log('Pareggio')    
+}
     //dichiaro il vincitore
