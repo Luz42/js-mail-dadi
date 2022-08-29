@@ -54,14 +54,14 @@ if (userNumber < computerNumber){
     result.classList.add('bg-danger')
 }
 
-if (userNumber > computerNumber) {
+else if (userNumber > computerNumber) {
     console.log('Hai vinto')
     //result.innerHTML.append ('Hai vinto')
     result.classList.add('bg-success')
     document.getElementById("risultato").innerHTML = ('Hai vinto');
 } 
 
-if(userNumber === computerNumber) {
+else {
     console.log('Pareggio') 
     //result.innerHTML.append('Hai pareggiato')
     result.classList.add('bg-warning')
